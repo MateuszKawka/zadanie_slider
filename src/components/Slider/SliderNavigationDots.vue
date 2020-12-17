@@ -33,9 +33,10 @@ export default {
 
 <style lang="scss">
 .slider-navigation-dots {
+  width: 100%;
+  margin-top: $s2;
   display: flex;
-  position: absolute;
-  bottom: -24px;
+  justify-content: center;
 }
 
 .dot {
@@ -46,6 +47,10 @@ export default {
   border: none;
   cursor: pointer;
   transition: background 0.25s ease-in-out;
+
+  &:hover {
+    background: $dark-color-opposite;
+  }
 }
 
 .dot--active {

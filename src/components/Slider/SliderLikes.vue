@@ -27,7 +27,9 @@ export default {
   },
   methods: {
     dislike() {
-      this.$emit("dislike");
+      if (this.likesCount > 0) {
+        this.$emit("dislike");
+      }
     },
     like() {
       this.$emit("like");
@@ -38,12 +40,17 @@ export default {
 
 <style lang="scss">
 .slider-likes {
-  width: 164px;
-  height: 64px;
+  width: 80%;
+  height: 48px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   background: $light-color;
+  margin: 0 auto;
+}
+
+.slider-likes:focus {
+  outline: 0;
 }
 
 .slider-likes__likes {

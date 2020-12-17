@@ -56,6 +56,10 @@ export default {
   cursor: pointer;
 }
 
+.arrow:focus {
+  outline: 0;
+}
+
 .arrow:hover {
   border-color: $details-color;
 }

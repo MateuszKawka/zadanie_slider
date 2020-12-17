@@ -8,4 +8,5 @@ module.exports = {
       },
     },
   },
+  // publicPath: '/zadanie_slider/'
 };
